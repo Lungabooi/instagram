@@ -61,7 +61,8 @@
 
   
 
-    <q-page-container class="bg-grey-1">
+    <q-page-container 
+    class="bg-grey-1">
       <router-view />
     </q-page-container>
   </q-layout>
