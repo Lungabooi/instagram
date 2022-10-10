@@ -12,10 +12,11 @@
 
         />
         <q-separator
+        class="large-screen-only"
          vertical 
          inset
          spaced
-         class="large-screen-only"/> 
+         /> 
         
         <q-toolbar-title class="text-grand-hotel text-bold" >
           Instagram
@@ -60,7 +61,7 @@
 
   
 
-    <q-page-container>
+    <q-page-container class="bg-grey-1">
       <router-view />
     </q-page-container>
   </q-layout>
