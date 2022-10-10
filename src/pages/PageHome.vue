@@ -10,7 +10,7 @@
 
         <q-item-section>
           <q-item-label>Lunga</q-item-label>
-          <q-item-label caption>Subhead</q-item-label>
+          <q-item-label caption>Cape Town Western Cape</q-item-label>
         </q-item-section>
       </q-item>
 
