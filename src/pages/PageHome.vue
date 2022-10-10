@@ -1,9 +1,10 @@
 <template>
   <q-page class="constrain q-pa-md">
    <div class="row q-col-gutter-lg">
-    <div class="col-12 col-sm-8"> <q-card 
+    <div class="col-12 col-sm-8"> 
+      <q-card 
     v-for='post in posts'
-     :key="post.id"
+     :key="post.id" flat bordered
     class="card-post q-mb-md"
     >
       <q-item >

@@ -16,17 +16,17 @@
     </q-btn>
     <div class="div row justify-center q-ma-md">
       <q-input
-      v-model="text"
+      v-model="post.caption"
       label="Caption"
-      class="col"
+      class="col  col-sm-6"
       >
     </q-input>
     </div>
     <div class="div row justify-center q-ma-md">
       <q-input
-      v-model="text"
+      v-model="post.location"
       label="Location"
-      class="col"
+      class="col col-sm-6"
       >
       
 
@@ -39,7 +39,14 @@
       </template>
     </q-input>
     </div>
-    <div class="row justify-center q-ma-md">  <q-btn unelevated rounded color="primary" label="Submit" /></div>
+    <div 
+    class="row justify-center
+     q-ma-md">  
+     <q-btn 
+     unelevated 
+     rounded 
+     color="primary" 
+    label="Post Image" /></div>
    </div>
   
 
@@ -47,8 +54,21 @@
 </template>
 
 <script>
+
+import { openURL, uid } from 'quasar'
 export default {
-    name: 'PageCamera'
+    name: 'PageCamera',
+    data(){
+      return {
+        post:{
+          id: uid(),
+          caption: '',
+          location:'',
+          photo:'null',
+          date: Date.now()
+        }
+      }
+    }
 }
 </script>
 
