@@ -1,6 +1,11 @@
-@<template>
-  <q-page class="flex flex-center">
-    <h5> Camera page</h5>
+<template>
+  <q-page class="constrain q-pa-md" >
+   <div class="camera-frame q-pa-md">
+    <img 
+    class='full-width'
+     src="https://cdn.quasar.dev/img/parallax2.jpg">
+  
+   </div>
   </q-page>
 </template>
 
@@ -10,6 +15,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="sass">
+.camera-frame
+  border: 2px solid $grey-10
 
 </style>
