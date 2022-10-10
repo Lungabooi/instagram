@@ -1,11 +1,12 @@
 <template>
   <q-page class="constrain q-pa-md">
-    <q-card 
+   <div class="row q-col-gutter-lg">
+    <div class="col-8"> <q-card 
     v-for='post in posts'
      :key="post.id"
     class="card-post q-mb-md"
     >
-      <q-item>
+      <q-item >
         <q-item-section avatar>
           <q-avatar>
             <img src="https://cdn.quasar.dev/img/avatar2.jpg">
@@ -23,7 +24,23 @@
         <div >{{ post.caption}}</div>
         <div class="text-caption text-grey">{{post.date | niceDate}}</div>
       </q-card-section>
-    </q-card>
+    </q-card></div>
+    <div class="col-4"><q-item class="fixed">
+        <q-item-section avatar>
+          <q-avatar size="48px">
+            <img src="https://cdn.quasar.dev/img/avatar2.jpg">
+          </q-avatar>
+        </q-item-section>
+
+        <q-item-section>
+          <q-item-label>Lunga</q-item-label>
+          <q-item-label caption>Lunga</q-item-label>
+        </q-item-section>
+      </q-item></div>
+   </div>
+   
+   
+    
   </q-page>
 </template>
 
