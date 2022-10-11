@@ -74,7 +74,7 @@ export default {
       initCamera() {
         navigator.mediaDevices.getUserMedia ( {
       video: true
-     }). the ( stream => {
+     }). then ( stream => {
         this.$refs.video.srcObject = stream
      })
       }
